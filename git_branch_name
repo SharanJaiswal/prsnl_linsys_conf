@@ -19,3 +19,9 @@ else
  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
 fi
 unset color_prompt force_color_prompt
+
+# For miniconda to work smoothly... https://varhowto.com/install-miniconda-ubuntu-20-04/
+source ~/miniconda3/etc/profile.d/conda.sh
+if [[ -z ${CONDA_PREFIX+x} ]]; then
+    export PATH="~/conda/bin:$PATH"
+fi
