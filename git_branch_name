@@ -25,3 +25,9 @@ source ~/miniconda3/etc/profile.d/conda.sh
 if [[ -z ${CONDA_PREFIX+x} ]]; then
     export PATH="~/conda/bin:$PATH"
 fi
+
+
+###
+# https://github.com/ohmybash/oh-my-bash
+# https://github.com/ohmybash/oh-my-bash/tree/master/themes/agnoster
+# https://github.com/powerline/fonts
